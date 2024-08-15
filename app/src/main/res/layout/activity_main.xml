@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relMain"
+    android:visibility="gone"
+    android:background="@color/Lavender"
+    tools:context=".MainActivity">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/book_store"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOK_STORE"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/txtBOOK_STORE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Every reader finds their niche, every book finds its reader."
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+
+
+
+
+</RelativeLayout>

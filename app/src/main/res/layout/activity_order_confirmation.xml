@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/rombackground">
+
+        <TextView
+            android:id="@+id/confirmationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Order Placed Successfully!"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/celebrationImageView"
+            android:layout_width="213dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Celebration Image"
+            android:src="@drawable/order" />
+
+    </LinearLayout>
+
+    <!-- Bottom section with buttons -->
+    <RelativeLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topSection"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/rombackground">
+
+        <Button
+            android:id="@+id/trackOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Track Order"
+            android:textColor="@android:color/white"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

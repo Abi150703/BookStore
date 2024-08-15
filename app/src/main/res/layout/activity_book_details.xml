@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/rombackground">
+
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fiction4" />
+
+    <TextView
+        android:id="@+id/bookTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/bookImageView"
+        android:layout_alignTop="@id/bookImageView"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/bookPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: $0.00"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/bookTitleTextView"
+        android:layout_toRightOf="@id/bookImageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/quantityLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/bookPriceTextView"
+        android:layout_toRightOf="@id/bookImageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/decreaseQuantityButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_below="@id/bookPriceTextView"
+        android:layout_toRightOf="@id/quantityLabelTextView"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/quantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/bookPriceTextView"
+        android:layout_toRightOf="@id/decreaseQuantityButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/increaseQuantityButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:layout_below="@id/bookPriceTextView"
+        android:layout_toRightOf="@id/quantityTextView"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_button"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/increaseQuantityButton"
+        android:layout_marginTop="100dp"
+        android:hint="Enter your address"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+      />
+
+    <EditText
+        android:id="@+id/mobileNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your mobile number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:inputType="phone"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNumberEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your email"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"/>
+
+
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:text="Place Order"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sendSmsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:text="Send SMS"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sendEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendSmsButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:text="Send Email"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
+
+

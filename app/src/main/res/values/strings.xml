@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">firstapp</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="sign_up">sign up</string>
+    <string name="already_an_user_login">Already an user? Login</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="Password">Password</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="Email">Email</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="PASSWORD">Password</string>
+    <string name="LOGIN">Login</string>
+    <string name="not_yet_registered_sign_up">Not yet registered? Sign Up</string>
+    <string name="welcome_to_our_app">welcome to our app</string>
+    <string name="shop_from_a_to_z">Shop from A to Z</string>
+    <string name="crime">Crime</string>
+    <string name="Username" />
+    <string name="drama">drama</string>
+    <string name="horror">horror</string>
+    <string name="biography">biography</string>
+    <string name="education">education</string>
+    <string name="romance">romance</string>
+    <string name="historical">historical</string>
+    <string name="category_image_desc">category_image_desc</string>
+</resources>
